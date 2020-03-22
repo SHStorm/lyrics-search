@@ -1,0 +1,199 @@
+/* Custom reset */
+html {
+  height: 100%;
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+
+  font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6, small, i, em, b, strong, input, button, kbd, textarea, pre {
+  color: inherit;
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input, button {
+  font: inherit;
+}
+
+button {
+  border: none;
+
+  cursor: pointer;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/* Main styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+[disabled] {
+  opacity: 0.5;
+}
+
+.header {
+  position: relative;
+  z-index: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.25em;
+
+  color: #ffffff;
+
+  background-color: #212121;
+  background-image: url('/images/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header::after {
+  content: '';
+
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.search-form {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 50rem;
+  margin-top: 3rem;
+}
+
+.input {
+  flex: 1;
+  padding: 0.9375em 1.875em;
+
+  color: #000000;
+
+  border: none;
+  border-radius: 5rem;
+}
+
+.search-button {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  bottom: 0.2rem;
+
+  padding: 0.8125em 1.875em;
+
+  border-radius: 5rem;
+
+  background-color: #e056fd;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 50rem;
+  margin: 3rem auto;
+}
+
+.button {
+  padding: 0.3125em 0.8125em;
+
+  color: #ffffff;
+
+  border-radius: 1.3rem;
+
+  background-color: #8d56fd;
+}
+
+.small-button {
+  font-size: 0.8125em;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.song-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.author {
+  font-weight: 700;
+}
+
+.song-title {
+
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.nav-button:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.lyrics-header {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  font-size: 1.5em;
+
+  border-bottom: 1px solid #aaaaaa;
+}

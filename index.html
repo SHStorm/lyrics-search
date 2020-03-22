@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lyrics Search</title>
+
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+  <script src="/scripts/index.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">Lyrics Search</h1>
+
+    <form id="search-form" class="search-form">
+      <label class="sr-only" for="query">Search</label>
+      <input id="query" class="input" type="text" name="query" placeholder="Enter artist or song name..." required>
+      <button class="search-button">Search</button>
+    </form>
+  </header>
+
+  <main id="content" class="content">
+    <p>Results will be displayed here</p>
+  </main>
+</body>
+</html>
